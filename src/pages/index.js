@@ -1,5 +1,5 @@
 import React from "react"
-import Homepage from "./homepage/index.js"
+import Homepage from "../components/homepage/index"
 import 'antd/dist/antd.css';
 import "../styles.less"
 import "../styles.css"

@@ -1,12 +1,10 @@
 import React from "react"
 import Landing from "./landing"
-import Background from "./background"
 import Research from "./research"
 import Experience from "./experience"
 import Education from "./education"
 import Project from "./project"
 import {Layout, Col, Row, Space} from 'antd';
-import Icon from '@ant-design/icons';
 import {MailIcon, LinkedInIcon, InstagramIcon, GoodReadsIcon, GithubIcon} from "../common/icons";
 import {LinkIcon} from "../common/linkicons";
 

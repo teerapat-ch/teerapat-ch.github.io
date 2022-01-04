@@ -5,6 +5,7 @@ const LinkIcon = ({component, href, style}) => {
     const [hover, setHover] = React.useState(false);
 
     return (
+        <a href={href} target="_blank">
         <Icon
             component={component}
             style={
@@ -14,8 +15,8 @@ const LinkIcon = ({component, href, style}) => {
             }
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
-            onClick={() => window.open(href, "_blank")}
         />
+        </a>
 
     )
 }
