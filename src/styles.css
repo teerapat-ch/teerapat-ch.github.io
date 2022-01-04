@@ -1,8 +1,47 @@
+@import '~antd/dist/antd.dark.css';
+@import '~antd/dist/antd.compact.css';
+
 body {
     margin: 0;
     padding: 0;
+    color: #eeeeee;
+
+    font-family: -apple-system, 'roboto', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
     margin: 0
+}
+
+/* Code from: https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+.custom_anchor {
+  position: relative;
+  color: #8EA4D2;
+  text-decoration: none;
+}
+
+.custom_anchor:hover {
+  color: #AEC4E2;
+  /* font-weight: bold; */
+}
+
+.custom_anchor::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #8EA4D2;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.custom_anchor:hover::before {
+  transform: scaleX(1);
 }

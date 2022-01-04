@@ -4,6 +4,12 @@ module.exports = {
         title: "Teerapat (Ted) Chaiwachirasak",
     },
     plugins: [
+        {
+            resolve: `gatsby-plugin-less`,
+            options: {
+                javascriptEnabled: true,
+            },
+        },
         "gatsby-plugin-emotion",
         {
             resolve: "gatsby-plugin-google-analytics",
