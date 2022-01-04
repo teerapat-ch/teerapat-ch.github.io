@@ -1,3 +1,5 @@
+import * as React from "react"
+
 const workexps = [
     {
         title: "Data Scientist",
@@ -34,6 +36,7 @@ const workexps = [
             icon: "https://image-dev.wi.th/uploads/images/profiles/KBTG-Kasikorn",
         },
         details: [
+            <div>Co-authored a publication to create the first benchmark for Thai NLP tasks on Thai social media text data, responsible for the “Word Correction and Variant” section. [<a className="custom_anchor" href="https://www.researchgate.net/publication/329530389_A_Preliminary_Study_on_Fundamental_Thai_NLP_Tasks_for_User-generated_Web_Content" target="_blank">pdf</a>]</div>,
             "Developed a character embedding convolutional neural networks model for capturing a character-level misspelling for Thai social media chat messages of Kasikorn Bank help center with PyTorch.",
             "Applied clustering technique on Word2vec embeddings on the chat messages to recognize spelling variations of words with the same meaning common in the unconventional language in a social media context.",
         ],

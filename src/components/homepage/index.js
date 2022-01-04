@@ -7,6 +7,7 @@ import Project from "./project"
 import {Layout, Col, Row, Space} from 'antd';
 import {MailIcon, LinkedInIcon, InstagramIcon, GoodReadsIcon, GithubIcon} from "../common/icons";
 import {LinkIcon} from "../common/linkicons";
+import { FileTextOutlined } from '@ant-design/icons';
 
 const {Header, Content, Footer, Sider} = Layout;
 
@@ -26,8 +27,8 @@ const Homepage = () => {
                     </Col>
                     <Col span={12}>
                         <Space size={20}>
-                            <LinkIcon style={{fontSize: "20px"}} component={LinkedInIcon} href="https://www.linkedin.com/in/teerapat-chaiwachirasak-876373134" />
-                            <LinkIcon style={{fontSize: "20px"}} component={GithubIcon} href="https://github.com/teerapat-ch" />
+                            <LinkIcon style={{fontSize: "20px"}} component={LinkedInIcon} href="https://www.linkedin.com/in/teerapat-chaiwachirasak-876373134" tooltip="LinkedIn"/>
+                            <LinkIcon style={{fontSize: "20px"}} component={GithubIcon} href="https://github.com/teerapat-ch" tooltip="Github"/>
                         </Space>
                     </Col>
                 </Row>

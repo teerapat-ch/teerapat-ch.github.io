@@ -1,36 +1,18 @@
 import React from "react"
 import {Row, Col, Space, Timeline, Image, Card, Avatar, Divider} from "antd"
-import {Section3} from "../common/components"
+import {Section3, FadeInDiv} from "../common/components"
 import {Subtitle, SubSubtitle} from "../common/text"
 import {EditOutlined, EllipsisOutlined, SettingOutlined} from '@ant-design/icons';
 import projects from "../data/project";
-import {Slide} from "react-reveal";
+import {StaticImage} from "gatsby-plugin-image"
 
-const ProjectItem = ({title, desc, img}) => {
-    return (
-        <Slide right>
-            <Row>
-                <Col span={16}>
-                    <Subtitle>{title}</Subtitle>
-                    <SubSubtitle>{desc}</SubSubtitle>
-                </Col>
-                <Col span={8}>
-                    <Image
-                        preview={false}
-                        height={"150px"}
-                        width={"272px"}
-                        src={img}
-                        className="undraggable"
-                        style={{
-                            objectFit: "cover",
-                            // border: "5px solid #666",
-                            // boxShadow: "3px 3px 10px black"
-                        }}
-                    />
-                </Col>
-            </Row>
-        </Slide>
-    )
+const imageStyle = {
+    objectFit: "cover",
+    height: "150px",
+    width: "272px",
+    marginLeft: "15px",
+    // border: "5px solid #666",
+    // boxShadow: "3px 3px 10px black"
 }
 
 const Project = () => {
@@ -38,8 +20,92 @@ const Project = () => {
     return (
         <Section3 title="Project">
             <Space direction="vertical" size={20}>
-                {projects.map((project, idx) => <ProjectItem {...project} />)}
+
+                <FadeInDiv direction="left">
+                    <Row>
+                        <Col span={16}>
+                            <Subtitle>{projects[0].title}</Subtitle>
+                            <SubSubtitle>{projects[0].desc}</SubSubtitle>
+                        </Col>
+                        <Col span={8}>
+                            <StaticImage
+                                alt="home_hackathon"
+                                preview={false}
+                                height={"150px"}
+                                width={"272px"}
+                                src="../../images/project_homehackathon.jpeg"
+                                className="undraggable"
+                                style={imageStyle}
+                            />
+                        </Col>
+                    </Row>
+                </FadeInDiv>
+
+                <FadeInDiv direction="left">
+                    <Row>
+                        <Col span={16}>
+                            <Subtitle>{projects[1].title}</Subtitle>
+                            <SubSubtitle>{projects[1].desc}</SubSubtitle>
+                        </Col>
+                        <Col span={8}>
+                            <StaticImage
+                                alt="dtac project"
+                                preview={false}
+                                height={"150px"}
+                                width={"272px"}
+                                src="../../images/project_dtac.png"
+                                className="undraggable"
+                                style={imageStyle}
+                            />
+                        </Col>
+                    </Row>
+                </FadeInDiv>
+
+                <FadeInDiv direction="left">
+                    <Row>
+                        <Col span={16}>
+                            <Subtitle>{projects[2].title}</Subtitle>
+                            <SubSubtitle>{projects[2].desc}</SubSubtitle>
+                        </Col>
+                        <Col span={8}>
+                            <StaticImage
+                                alt="siit project"
+                                preview={false}
+                                height={"150px"}
+                                width={"272px"}
+                                src="../../images/project_siit.png"
+                                className="undraggable"
+                                style={imageStyle}
+                            />
+                        </Col>
+                    </Row>
+                </FadeInDiv>
+
+
+                <FadeInDiv direction="left">
+                    <Row>
+                        <Col span={16}>
+                            <Subtitle>{projects[3].title}</Subtitle>
+                            <SubSubtitle>{projects[3].desc}</SubSubtitle>
+                        </Col>
+                        <Col span={8}>
+                            <StaticImage
+                                alt="tutorth"
+                                preview={false}
+                                height={"150px"}
+                                width={"272px"}
+                                src="../../images/project_tutorth.png"
+                                className="undraggable"
+                                style={imageStyle}
+                            />
+                        </Col>
+                    </Row>
+                </FadeInDiv>
+
             </Space>
+
+
+
         </Section3>
     )
 }

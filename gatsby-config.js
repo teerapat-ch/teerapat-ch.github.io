@@ -1,4 +1,5 @@
 module.exports = {
+    pathPrefix: "personal_website",
     siteMetadata: {
         siteUrl: "https://www.yourdomain.tld",
         title: "Teerapat (Ted) Chaiwachirasak",
@@ -23,7 +24,7 @@ module.exports = {
         {
             resolve: "gatsby-plugin-manifest",
             options: {
-                icon: "src/images/icon.png",
+                icon: "src/images/favicon-32x32.png",
             },
         },
         "gatsby-plugin-mdx",
@@ -45,5 +46,7 @@ module.exports = {
             },
             __key: "pages",
         },
+        "gatsby-plugin-styled-components",
+        "gatsby-plugin-scroll-reveal"
     ],
 };

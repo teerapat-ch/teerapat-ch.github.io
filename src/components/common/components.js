@@ -1,10 +1,9 @@
 import React from "react"
 import {Row, Col} from "antd"
 import styled, {keyframes} from 'styled-components';
-import {Slide} from 'react-reveal';
 
 const Section = styled.div`
-    background-color: #1C1D21;
+    background-color: #1C1D21 !important;
     height: 100%;
     width: 100%;
 
@@ -17,7 +16,7 @@ const Section = styled.div`
 `;
 
 const Section2 = styled.div`
-    background-color: #1C1D21;
+    background-color: #1C1D21 !important;
     height: 100%;
     width: 100%;
 
@@ -27,8 +26,17 @@ const Section2 = styled.div`
     padding-bottom: 20px;
 `;
 
-const FadeInDiv = (props) => {
-    return <Slide left>{props.children}</Slide>
+// return <Slide left>{props.children}</Slide>
+const FadeInDiv = ({direction, children}) => {
+    const dataSal = direction == "fade"? "fade" : direction=="left"? "slide-left" : "slide-right";
+    return (
+        <div 
+        data-sal={dataSal}
+        data-sal-delay="100"
+        data-sal-duration="600"
+        data-sal-easing="ease"
+        >{children}
+        </div>)
 }
 
 const Section3 = (props) => {
@@ -38,7 +46,7 @@ const Section3 = (props) => {
             <div style={{paddingTop: "80px"}}>
                 <Row>
                     <Col span={4} style={{fontSize: "1.6em", color: "#8EA4D2", fontWeight: "bold"}} offset={6}>
-                        <FadeInDiv direction={"left"}>{props.title}</FadeInDiv>
+                        <FadeInDiv direction={"right"}>{props.title}</FadeInDiv>
                     </Col>
                     <Col span={8} style={{fontSize: "1.2em", color: "#ddd"}}>{props.children}</Col>
                 </Row>

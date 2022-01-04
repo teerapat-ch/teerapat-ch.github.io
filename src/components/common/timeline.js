@@ -1,7 +1,6 @@
 import React from 'react';
 import { Row, Col, Timeline, Space, Typography } from 'antd';
-import {Slide} from 'react-reveal';
-
+import {FadeInDiv} from "../common/components";
 const { Title, Text, Paragraph } = Typography;
 
 const months = [
@@ -60,15 +59,15 @@ function TimelineItem(item) {
 
 
   const TimeLabel = <div>
-    <Slide left><Text strong={true} style={textStyle}>{formatString(startDate)} -</Text></Slide>
-    <Slide left><Text strong={true} style={textStyle}>{formatString(endDate)}</Text></Slide>
-    <Slide left><Text style={textStyle}>({monthDiff(startDate, endDate)})</Text></Slide>
+    <FadeInDiv direction="right"><Text strong={true} style={textStyle}>{formatString(startDate)} -</Text></FadeInDiv>
+    <FadeInDiv direction="right"><Text strong={true} style={textStyle}>{formatString(endDate)}</Text></FadeInDiv>
+    <FadeInDiv direction="right"><Text style={textStyle}>({monthDiff(startDate, endDate)})</Text></FadeInDiv>
   </div>
 
   return (
     <Timeline.Item label={TimeLabel} position='left' >
       <div style={{align: "Left"}}>
-        <Slide right cascade >
+        <FadeInDiv direction="left">
           <Space direction="horizontal" style={{marginTop: "-30px"}}>
               {/*<img src={icon} width={iconWidth? iconWidth: "80px"}/>*/}
             <Title level={5} style={textStyle}>{title}, {name}</Title>
@@ -78,7 +77,7 @@ function TimelineItem(item) {
               {details.slice(0, 1).map((detail) => (<li>{detail}</li>) )}
             </ul>
           </Paragraph>
-        </Slide>
+        </FadeInDiv>
       </div>
     </Timeline.Item>
   )
