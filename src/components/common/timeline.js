@@ -58,7 +58,7 @@ function TimelineItem(item) {
   const {name, icon, iconWidth} = company
 
 
-  const TimeLabel = <div>
+  const TimeLabel = <div className="hide-when-small">
     <FadeInDiv direction="right"><Text strong={true} style={textStyle}>{formatString(startDate)} -</Text></FadeInDiv>
     <FadeInDiv direction="right"><Text strong={true} style={textStyle}>{formatString(endDate)}</Text></FadeInDiv>
     <FadeInDiv direction="right"><Text style={textStyle}>({monthDiff(startDate, endDate)})</Text></FadeInDiv>

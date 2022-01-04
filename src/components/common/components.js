@@ -4,10 +4,8 @@ import styled, {keyframes} from 'styled-components';
 
 const Section = styled.div`
     background-color: #1C1D21 !important;
-    height: 100%;
     width: 100%;
 
-    height: 80vh;
     width: 100vw;
 
     /* Remove any browser-default margins. */
@@ -17,7 +15,6 @@ const Section = styled.div`
 
 const Section2 = styled.div`
     background-color: #1C1D21 !important;
-    height: 100%;
     width: 100%;
 
     /* Remove any browser-default margins. */
@@ -45,10 +42,10 @@ const Section3 = (props) => {
         <Section2>
             <div style={{paddingTop: "80px"}}>
                 <Row>
-                    <Col span={4} style={{fontSize: "1.6em", color: "#8EA4D2", fontWeight: "bold"}} offset={6}>
+                    <Col lg={{span: 4, offset: 6}} md={{span: 16, offset: 4}} style={{marginBottom: "20px", fontSize: "1.6em", color: "#8EA4D2", fontWeight: "bold"}}>
                         <FadeInDiv direction={"right"}>{props.title}</FadeInDiv>
                     </Col>
-                    <Col span={8} style={{fontSize: "1.2em", color: "#ddd"}}>{props.children}</Col>
+                    <Col lg={{span: 8, offset: 0}} md={{span: 16, offset: 4}} style={{fontSize: "1.2em", color: "#ddd"}}>{props.children}</Col>
                 </Row>
             </div>
         </Section2>

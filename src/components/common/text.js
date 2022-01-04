@@ -9,6 +9,7 @@ const Subtitle = styled.h3`
     font-size: 1.2em;
     color: #ddd;
     font-weight: bold;
+    margin-top: 15px;
 `;
 
 const SubSubtitle = styled.h4`

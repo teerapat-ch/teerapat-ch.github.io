@@ -11,6 +11,7 @@ const imageStyle = {
     height: "150px",
     width: "272px",
     marginLeft: "15px",
+    align: "center"
     // border: "5px solid #666",
     // boxShadow: "3px 3px 10px black"
 }
@@ -23,11 +24,7 @@ const Project = () => {
 
                 <FadeInDiv direction="left">
                     <Row>
-                        <Col span={16}>
-                            <Subtitle>{projects[0].title}</Subtitle>
-                            <SubSubtitle>{projects[0].desc}</SubSubtitle>
-                        </Col>
-                        <Col span={8}>
+                        <Col lg={{span: 8, order: 2}} md={{span: 24, order: 1}}>
                             <StaticImage
                                 alt="home_hackathon"
                                 preview={false}
@@ -38,16 +35,16 @@ const Project = () => {
                                 style={imageStyle}
                             />
                         </Col>
+                        <Col lg={{span: 16, order: 1}} md={{span: 24, order: 2}}>
+                            <Subtitle>{projects[0].title}</Subtitle>
+                            <SubSubtitle>{projects[0].desc}</SubSubtitle>
+                        </Col>
                     </Row>
                 </FadeInDiv>
 
                 <FadeInDiv direction="left">
                     <Row>
-                        <Col span={16}>
-                            <Subtitle>{projects[1].title}</Subtitle>
-                            <SubSubtitle>{projects[1].desc}</SubSubtitle>
-                        </Col>
-                        <Col span={8}>
+                        <Col lg={{span: 8, order: 2}} md={{span: 24, order: 1}}>
                             <StaticImage
                                 alt="dtac project"
                                 preview={false}
@@ -58,16 +55,17 @@ const Project = () => {
                                 style={imageStyle}
                             />
                         </Col>
+
+                        <Col lg={{span: 16, order: 1}} md={{span: 24, order: 2}}>
+                            <Subtitle>{projects[1].title}</Subtitle>
+                            <SubSubtitle>{projects[1].desc}</SubSubtitle>
+                        </Col>
                     </Row>
                 </FadeInDiv>
 
                 <FadeInDiv direction="left">
                     <Row>
-                        <Col span={16}>
-                            <Subtitle>{projects[2].title}</Subtitle>
-                            <SubSubtitle>{projects[2].desc}</SubSubtitle>
-                        </Col>
-                        <Col span={8}>
+                        <Col lg={{span: 8, order: 2}} md={{span: 24, order: 1}}>
                             <StaticImage
                                 alt="siit project"
                                 preview={false}
@@ -78,17 +76,17 @@ const Project = () => {
                                 style={imageStyle}
                             />
                         </Col>
+                        <Col lg={{span: 16, order: 1}} md={{span: 24, order: 2}}>
+                            <Subtitle>{projects[2].title}</Subtitle>
+                            <SubSubtitle>{projects[2].desc}</SubSubtitle>
+                        </Col>
                     </Row>
                 </FadeInDiv>
 
 
                 <FadeInDiv direction="left">
                     <Row>
-                        <Col span={16}>
-                            <Subtitle>{projects[3].title}</Subtitle>
-                            <SubSubtitle>{projects[3].desc}</SubSubtitle>
-                        </Col>
-                        <Col span={8}>
+                        <Col lg={{span: 8, order: 2}} md={{span: 24, order: 1}}>
                             <StaticImage
                                 alt="tutorth"
                                 preview={false}
@@ -98,6 +96,11 @@ const Project = () => {
                                 className="undraggable"
                                 style={imageStyle}
                             />
+                        </Col>
+
+                        <Col lg={{span: 16, order: 1}} md={{span: 24, order: 2}}>
+                            <Subtitle>{projects[3].title}</Subtitle>
+                            <SubSubtitle>{projects[3].desc}</SubSubtitle>
                         </Col>
                     </Row>
                 </FadeInDiv>

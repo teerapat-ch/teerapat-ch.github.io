@@ -17,14 +17,15 @@ const CLink = ({href, children}) => {
 
 const ProfileLeft = () => {
     return (
-        <FadeInDiv direction="fade">
+        <FadeInDiv direction="fade" >
             <Space size={50} direction="vertical">
-                <Title>Hey there!</Title>
-                <div>I'm a graduate student in <CLink href="https://mscac.utoronto.ca/">Applied Computing (MScAC)</CLink> at the University of Toronto. Previously, I worked for 3 years at <CLink href="https://agoda.com">Agoda</CLink>, an online travel booking company, in the hotel ranking team as a data scientist/machine learning engineer. I did my bachelor in <CLink href="https://www.siit.tu.ac.th/">SIIT</CLink>, where I worked under <CLink href="https://scholar.google.com/citations?hl=en&user=HpDlacUAAAAJ&view_op=list_works&alert_preview_top_rm=2">Prof. Virach Sortlernlamvanich</CLink> in Thai natural language processing (NLP)</div>
+
+                <Title style={{marginTop: "20px"}}>Hey there!</Title>
+
+                <div>I'm a graduate student in <CLink href="https://mscac.utoronto.ca/">Applied Computing (MScAC)</CLink> at the University of Toronto. Previously, I worked for 3 years at <CLink href="https://agoda.com">Agoda</CLink>, an online travel booking company, in the hotel ranking team as a data scientist/machine learning engineer. I did my bachelor at <CLink href="https://www.siit.tu.ac.th/">SIIT</CLink>, where I worked under <CLink href="https://scholar.google.com/citations?hl=en&user=HpDlacUAAAAJ&view_op=list_works&alert_preview_top_rm=2">Prof. Virach Sortlernlamvanich</CLink> in Thai natural language processing (NLP)</div>
 
                 <div>Currently looking for an applied research internship in natural language processing and/or recommendation systems.</div>
 
-                <Row>
                     <Space size={30}>
                         More details:
                         <a
@@ -40,7 +41,6 @@ const ProfileLeft = () => {
                         <LinkIcon component={LinkedinOutlined} href="https://www.linkedin.com/in/teerapat-chaiwachirasak-876373134" tooltip="LinkedIn" />
                         <LinkIcon component={GithubOutlined} href="https://github.com/teerapat-ch" tooltip={"Github"}/>
                     </Space>
-                </Row>
             </Space>
         </FadeInDiv>
     )
@@ -52,8 +52,8 @@ const ProfileRight = () => {
             <div style={{textAlign: "center"}}>
                 <Space direction="vertical" size={20}>
                     <StaticImage
-                        height={"350px"}
-                        width={"350px"}
+                        height={"325px"}
+                        width={"325px"}
                         src='../../../public/images/profile_pic_lol.png'
                         className="undraggable"
                         style={{
@@ -82,8 +82,8 @@ const Landing = () => {
         <Section>
             <div style={{paddingTop: "200px", fontSize: "1.6em"}}>
                 <Row>
-                    <Col span={8} offset={2}><ProfileRight /></Col>
-                    <Col span={10}><ProfileLeft /></Col>
+                    <Col lg={{span: 8, offset: 2}} md={{span: 16, offset: 4}} xs={{span: 22, offset: 0}}><ProfileRight /></Col>
+                    <Col lg={{span: 10, offset: 0}} md={{span: 16, offset: 4}} xs={{span:22, offset: 0}}><ProfileLeft /></Col>
                 </Row>
             </div>
         </Section>
