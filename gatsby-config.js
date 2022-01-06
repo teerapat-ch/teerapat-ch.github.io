@@ -1,5 +1,4 @@
 module.exports = {
-    pathPrefix: "personal_website",
     siteMetadata: {
         siteUrl: "https://www.yourdomain.tld",
         title: "Teerapat (Ted) Chaiwachirasak",

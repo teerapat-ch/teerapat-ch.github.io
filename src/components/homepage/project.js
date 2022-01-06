@@ -36,7 +36,9 @@ const Project = () => {
                             />
                         </Col>
                         <Col lg={{span: 16, order: 1}} md={{span: 24, order: 2}}>
+                            <a href="https://github.com/teerapat-ch/hometech/blob/master/readme.md" target="_blank">
                             <Subtitle>{projects[0].title}</Subtitle>
+                            </a>
                             <SubSubtitle>{projects[0].desc}</SubSubtitle>
                         </Col>
                     </Row>
@@ -57,7 +59,9 @@ const Project = () => {
                         </Col>
 
                         <Col lg={{span: 16, order: 1}} md={{span: 24, order: 2}}>
+                            <a href="https://github.com/teerapat-ch/DtacInternship" target="_blank">
                             <Subtitle>{projects[1].title}</Subtitle>
+                            </a>
                             <SubSubtitle>{projects[1].desc}</SubSubtitle>
                         </Col>
                     </Row>
@@ -77,7 +81,9 @@ const Project = () => {
                             />
                         </Col>
                         <Col lg={{span: 16, order: 1}} md={{span: 24, order: 2}}>
+                            <a href="https://github.com/teerapat-ch/ResearchPapersAnalyticsDemo" target="_blank">
                             <Subtitle>{projects[2].title}</Subtitle>
+                            </a>
                             <SubSubtitle>{projects[2].desc}</SubSubtitle>
                         </Col>
                     </Row>
@@ -99,7 +105,9 @@ const Project = () => {
                         </Col>
 
                         <Col lg={{span: 16, order: 1}} md={{span: 24, order: 2}}>
-                            <Subtitle>{projects[3].title}</Subtitle>
+                            <a href="https://www.youtube.com/watch?v=2f7cQEx3M2I" target="_blank">
+                                <Subtitle>{projects[3].title}</Subtitle>
+                            </a>
                             <SubSubtitle>{projects[3].desc}</SubSubtitle>
                         </Col>
                     </Row>
