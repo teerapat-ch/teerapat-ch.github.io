@@ -84,7 +84,7 @@ const ProfileRight = () => {
           <StaticImage
             height={"325px"}
             width={"325px"}
-            src="/Users/time/dev/personal_website/public/images/profile_pic_velocity_9.png"
+            src="https://github.com/teerapat-ch/teerapat-ch.github.io/blob/master/src/images/profile_headshot.png"
             className="undraggable"
             style={{
               objectFit: "cover",
