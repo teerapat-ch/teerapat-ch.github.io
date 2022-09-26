@@ -47,6 +47,14 @@
 
     - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
+5. **Deploy**
+
+    ```shell
+    npm run deploy
+    ```
+
+    This will deploy the site to GitHub. Make sure you push all the images if you update any!
+
 ## 🚀 Quick start (Gatsby Cloud)
 
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
