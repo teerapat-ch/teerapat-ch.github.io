@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkteerapat_ted_chaiwachirasak=self.webpackChunkteerapat_ted_chaiwachirasak||[]).push([[678],{8229:function(a,t,e){e.r(t),e.d(t,{default:function(){return r}});e(7294);var u=e(7609),n=e(2036),r=function(){return(0,n.tZ)(u.default,null)}}}]);
-//# sourceMappingURL=component---src-pages-index-js-74cfc94a655d5358928e.js.map
