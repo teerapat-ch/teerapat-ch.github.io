@@ -2,6 +2,19 @@ import * as React from "react";
 
 const workexps = [
   {
+    title: "ML Applied Research Intern",
+    company: {
+      name: "Crossing Minds",
+      icon: "https://assets.website-files.com/614a4327e767a4e698f7f94c/6160c32b49a28a20e3bb9ab3_Logo_THE_FINAL_color.svg",
+    },
+    details: [
+      "Implemented a transfer-learning approach for Bayesian Hyperparameter Optimization to speed up the process by utilizing knowledge from historical hyperparameter tuning runs (RGPE).",
+      "Formalized methods to extract dataset-level features which can uniquely characterize recommender datasets based on temporal-based information.",
+    ],
+    startDate: new Date("2022-05-03"),
+    endDate: new Date("2022-12-31"),
+  },
+  {
     title: "Data Scientist",
     company: {
       name: "Agoda",

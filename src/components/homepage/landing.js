@@ -34,7 +34,7 @@ const ProfileLeft = () => {
           <CLink href="https://mscac.utoronto.ca/">
             Applied Computing (MScAC)
           </CLink>{" "}
-          at the University of Toronto. Previously, I worked for 3 years at{" "}
+          at the University of Toronto. I am doing my applied-research internship at <CLink href="https://www.crossingminds.com/company/about">Crossing Minds</CLink>, where I explore speeding-up hyperparameter optimization with meta-learning. Previously, I worked for 3 years at{" "}
           <CLink href="https://agoda.com">Agoda</CLink>, an online travel
           booking company, in the hotel ranking team as a data scientist/machine
           learning engineer. I did my bachelor at{" "}
@@ -44,11 +44,6 @@ const ProfileLeft = () => {
             Prof. Virach Sortlernlamvanich
           </CLink>{" "}
           in Thai natural language processing (NLP)
-        </div>
-
-        <div>
-          Currently looking for an applied research internship in natural
-          language processing and/or recommendation systems.
         </div>
 
         <Space size={30}>
@@ -103,7 +98,7 @@ const ProfileRight = () => {
           <div>
             <div style={{ fontSize: "1.2em" }}>Teerapat Chaiwachirasak</div>
             <div style={{ fontSize: "0.6em", color: "#777" }}>
-              Data Scientist | ML Engineer | Full-stack developer
+              ML Engineer | Data Scientist |  Full-stack developer
             </div>
             <div style={{ fontSize: "0.7em", color: "#eee" }}>
               University of Toronto (MScAC) 🇨🇦

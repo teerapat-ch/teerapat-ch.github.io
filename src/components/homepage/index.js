@@ -1,6 +1,6 @@
 import React from "react";
 import Landing from "./landing";
-import Research from "./research";
+// import Research from "./research";
 import Experience from "./experience";
 import Education from "./education";
 import Project from "./project";
@@ -23,7 +23,7 @@ const Homepage = () => {
       <Landing />
       <Experience />
       <Education />
-      <Research />
+      {/*<Research />*/}
       <Project />
 
       <div
