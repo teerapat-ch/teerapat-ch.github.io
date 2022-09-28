@@ -52,11 +52,11 @@ const ProfileLeft = () => {
             //this will save the file as "your_cv.pdf"
             download="teerapat_resume.pdf"
             //put the path of your pdf file
-            href="/static/teerapat_resume.pdf"
+            href="https://github.com/teerapat-ch/teerapat-ch.github.io/raw/master/src/images/teerapat_resume.pdf"
           >
             <LinkIcon
               component={FileTextOutlined}
-              href="/static/teerapat_resume.pdf"
+              href="https://github.com/teerapat-ch/teerapat-ch.github.io/raw/master/src/images/teerapat_resume.pdf"
               tooltip="Resume"
             />
           </a>
